@@ -1,0 +1,213 @@
+#
+# There is insufficient memory for the Java Runtime Environment to continue.
+# Native memory allocation (mmap) failed to map 268435456 bytes for Failed to commit area from 0x0000000701e00000 to 0x0000000711e00000 of length 268435456.
+# Possible reasons:
+#   The system is out of physical RAM or swap space
+#   The process is running with CompressedOops enabled, and the Java Heap may be blocking the growth of the native heap
+# Possible solutions:
+#   Reduce memory load on the system
+#   Increase physical memory or swap space
+#   Check if swap backing store is full
+#   Decrease Java heap size (-Xmx/-Xms)
+#   Decrease number of Java threads
+#   Decrease Java thread stack sizes (-Xss)
+#   Set larger code cache with -XX:ReservedCodeCacheSize=
+# This output file may be truncated or incomplete.
+#
+#  Out of Memory Error (./open/src/hotspot/os/windows/os_windows.cpp:3273), pid=2832, tid=25888
+#
+# JRE version:  (11.0.10+8) (build )
+# Java VM: Java HotSpot(TM) 64-Bit Server VM (11.0.10+8-LTS-162, mixed mode, sharing, tiered, compressed oops, g1 gc, windows-amd64)
+# No core dump will be written. Minidumps are not enabled by default on client versions of Windows
+#
+
+---------------  S U M M A R Y ------------
+
+Command Line: -Dnetbeans.importclass=org.netbeans.upgrade.AutoUpgrade -XX:+UseStringDeduplication -Xss2m -Djdk.gtk.version=2.2 -Dapple.laf.useScreenMenuBar=true -Dapple.awt.graphics.UseQuartz=true -Dsun.java2d.noddraw=true -Dsun.java2d.dpiaware=true -Dsun.zip.disableMemoryMapping=true -Dplugin.manager.check.updates=false -Dnetbeans.extbrowser.manual_chrome_plugin_install=yes --add-opens=java.base/java.net=ALL-UNNAMED --add-opens=java.base/java.lang.ref=ALL-UNNAMED --add-opens=java.base/java.lang=ALL-UNNAMED --add-opens=java.base/java.security=ALL-UNNAMED --add-opens=java.base/java.util=ALL-UNNAMED --add-opens=java.desktop/javax.swing.plaf.basic=ALL-UNNAMED --add-opens=java.desktop/javax.swing.text=ALL-UNNAMED --add-opens=java.desktop/javax.swing=ALL-UNNAMED --add-opens=java.desktop/java.awt=ALL-UNNAMED --add-opens=java.desktop/java.awt.event=ALL-UNNAMED --add-opens=java.prefs/java.util.prefs=ALL-UNNAMED --add-opens=jdk.jshell/jdk.jshell=ALL-UNNAMED --add-modules=jdk.jshell --add-exports=java.desktop/sun.awt=ALL-UNNAMED --add-exports=java.desktop/java.awt.peer=ALL-UNNAMED --add-exports=java.desktop/com.sun.beans.editors=ALL-UNNAMED --add-exports=java.desktop/sun.swing=ALL-UNNAMED --add-exports=java.desktop/sun.awt.im=ALL-UNNAMED --add-exports=jdk.internal.jvmstat/sun.jvmstat.monitor=ALL-UNNAMED --add-exports=java.management/sun.management=ALL-UNNAMED --add-exports=java.base/sun.reflect.annotation=ALL-UNNAMED -XX:+IgnoreUnrecognizedVMOptions -Djdk.home=C:\Program Files\Java\jdk-11.0.10 -Dnetbeans.home=C:\netbeans\platform -Dnetbeans.user=C:\Users\h\AppData\Roaming\NetBeans\12.0 -Dnetbeans.default_userdir_root=C:\Users\h\AppData\Roaming\NetBeans -XX:+HeapDumpOnOutOfMemoryError -XX:HeapDumpPath=C:\Users\h\AppData\Roaming\NetBeans\12.0\var\log\heapdump.hprof -Dsun.awt.keepWorkingSetOnMinimize=true -Dnetbeans.dirs=C:\netbeans\nb;C:\netbeans\ergonomics;C:\netbeans\ide;C:\netbeans\extide;C:\netbeans\java;C:\netbeans\apisupport;C:\netbeans\webcommon;C:\netbeans\websvccommon;C:\netbeans\enterprise;C:\netbeans\mobility;C:\netbeans\profiler;C:\netbeans\python;C:\netbeans\php;C:\netbeans\identity;C:\netbeans\harness;C:\netbeans\cnd;C:\netbeans\cndext;C:\netbeans\dlight;C:\netbeans\groovy;C:\netbeans\extra;C:\netbeans\javacard;C:\netbeans\javafx exit 
+
+Host: Intel(R) Core(TM) i7-5600U CPU @ 2.60GHz, 4 cores, 15G,  Windows 10 , 64 bit Build 19041 (10.0.19041.3636)
+Time: Sat Jan  6 15:18:58 2024 Egypt Standard Time elapsed time: 0.038744 seconds (0d 0h 0m 0s)
+
+---------------  T H R E A D  ---------------
+
+Current thread (0x0000000003367800):  JavaThread "Unknown thread" [_thread_in_vm, id=25888, stack(0x0000000000460000,0x0000000000660000)]
+
+Stack: [0x0000000000460000,0x0000000000660000]
+Native frames: (J=compiled Java code, j=interpreted, Vv=VM code, C=native code)
+V  [jvm.dll+0x613e6a]
+V  [jvm.dll+0x74c1ff]
+V  [jvm.dll+0x74d885]
+V  [jvm.dll+0x74df03]
+V  [jvm.dll+0x243b78]
+V  [jvm.dll+0x61125a]
+V  [jvm.dll+0x606165]
+V  [jvm.dll+0x2f85fc]
+V  [jvm.dll+0x2f8482]
+V  [jvm.dll+0x2fd136]
+V  [jvm.dll+0x33f6bf]
+V  [jvm.dll+0x33f0f0]
+V  [jvm.dll+0x2d5d08]
+V  [jvm.dll+0x2d6e66]
+V  [jvm.dll+0x727d17]
+V  [jvm.dll+0x7295bf]
+V  [jvm.dll+0x34c4a9]
+V  [jvm.dll+0x70d6b0]
+V  [jvm.dll+0x3b584f]
+V  [jvm.dll+0x3b7951]
+C  [nbexec64.dll+0x29f2]
+C  [nbexec64.dll+0x2aeb]
+C  [nbexec64.dll+0x21a9]
+C  [nbexec64.dll+0x45dd]
+C  [nbexec64.dll+0x42ad]
+C  [nbexec64.dll+0x3a08]
+C  [netbeans64.exe+0x17f27]
+C  [netbeans64.exe+0x222a]
+C  [netbeans64.exe+0x15b2]
+C  [netbeans64.exe+0x13f8]
+C  [netbeans64.exe+0x14eb]
+C  [KERNEL32.DLL+0x17344]
+C  [ntdll.dll+0x526b1]
+
+
+---------------  P R O C E S S  ---------------
+
+Threads class SMR info:
+_java_thread_list=0x0000000000826900, length=0, elements={
+}
+
+Java Threads: ( => current thread )
+
+Other Threads:
+  0x000000000337d800 GCTaskThread "GC Thread#0" [stack: 0x0000000002d00000,0x0000000002f00000] [id=19384]
+  0x00000000033d7000 ConcurrentGCThread "G1 Main Marker" [stack: 0x0000000024000000,0x0000000024200000] [id=19632]
+  0x00000000033db000 ConcurrentGCThread "G1 Conc#0" [stack: 0x0000000024200000,0x0000000024400000] [id=12840]
+
+[error occurred during error reporting (printing all threads), id 0xc0000005, EXCEPTION_ACCESS_VIOLATION (0xc0000005) at pc=0x00007ff878744f57]
+
+VM state:not at safepoint (not fully initialized)
+
+VM Mutex/Monitor currently owned by a thread:  ([mutex/lock_event])
+[0x0000000003364940] Heap_lock - owner thread: 0x0000000003367800
+
+Heap address: 0x0000000701e00000, size: 4066 MB, Compressed Oops mode: Non-zero based: 0x0000000701e00000
+Narrow klass base: 0x0000000000000000, Narrow klass shift: 0
+
+GC Heap History (0 events):
+No events
+
+Deoptimization events (0 events):
+No events
+
+Classes redefined (0 events):
+No events
+
+Internal exceptions (0 events):
+No events
+
+Events (0 events):
+No events
+
+
+Dynamic libraries:
+0x0000000000400000 - 0x000000000045e000 	C:\netbeans\bin\netbeans64.exe
+0x00007ff8f2f10000 - 0x00007ff8f3108000 	C:\WINDOWS\SYSTEM32\ntdll.dll
+0x00007ff8ad180000 - 0x00007ff8ad199000 	C:\Program Files\AVG\Antivirus\aswhook.dll
+0x00007ff8f1b20000 - 0x00007ff8f1bdd000 	C:\WINDOWS\System32\KERNEL32.DLL
+0x00007ff8f0800000 - 0x00007ff8f0af6000 	C:\WINDOWS\System32\KERNELBASE.dll
+0x00007ff8f28b0000 - 0x00007ff8f295f000 	C:\WINDOWS\System32\ADVAPI32.dll
+0x00007ff8f1be0000 - 0x00007ff8f1c7e000 	C:\WINDOWS\System32\msvcrt.dll
+0x00007ff8f1a80000 - 0x00007ff8f1b1c000 	C:\WINDOWS\System32\sechost.dll
+0x00007ff8f26a0000 - 0x00007ff8f27c6000 	C:\WINDOWS\System32\RPCRT4.dll
+0x00007ff8f10a0000 - 0x00007ff8f17e5000 	C:\WINDOWS\System32\SHELL32.dll
+0x00007ff8f0ed0000 - 0x00007ff8f0f6d000 	C:\WINDOWS\System32\msvcp_win.dll
+0x00007ff8f0d10000 - 0x00007ff8f0e10000 	C:\WINDOWS\System32\ucrtbase.dll
+0x00007ff8f2230000 - 0x00007ff8f23ce000 	C:\WINDOWS\System32\USER32.dll
+0x00007ff8f0b00000 - 0x00007ff8f0b22000 	C:\WINDOWS\System32\win32u.dll
+0x00007ff8f2670000 - 0x00007ff8f269c000 	C:\WINDOWS\System32\GDI32.dll
+0x00007ff8f0ba0000 - 0x00007ff8f0cba000 	C:\WINDOWS\System32\gdi32full.dll
+0x00007ff8f0f70000 - 0x00007ff8f0fa0000 	C:\WINDOWS\System32\IMM32.DLL
+0x00007ff8ee690000 - 0x00007ff8eee2b000 	C:\WINDOWS\SYSTEM32\windows.storage.dll
+0x00007ff8f2960000 - 0x00007ff8f2cb4000 	C:\WINDOWS\System32\combase.dll
+0x00007ff8eff60000 - 0x00007ff8eff8d000 	C:\WINDOWS\SYSTEM32\Wldp.dll
+0x00007ff8f1d10000 - 0x00007ff8f1dbd000 	C:\WINDOWS\System32\SHCORE.dll
+0x00007ff8f25b0000 - 0x00007ff8f2605000 	C:\WINDOWS\System32\shlwapi.dll
+0x000000005e660000 - 0x000000005e6b2000 	C:\netbeans\platform\lib\nbexec64.dll
+0x00007ff878460000 - 0x00007ff878f5b000 	C:\Program Files\Java\jdk-11.0.10\bin\server\jvm.dll
+0x00007ff8f1c80000 - 0x00007ff8f1c88000 	C:\WINDOWS\System32\PSAPI.DLL
+0x00007ff8de7b0000 - 0x00007ff8de7b9000 	C:\WINDOWS\SYSTEM32\WSOCK32.dll
+0x00007ff8f1c90000 - 0x00007ff8f1cfb000 	C:\WINDOWS\System32\WS2_32.dll
+0x00007ff8e3640000 - 0x00007ff8e3667000 	C:\WINDOWS\SYSTEM32\WINMM.dll
+0x00007ff8e9770000 - 0x00007ff8e977a000 	C:\WINDOWS\SYSTEM32\VERSION.dll
+0x00007ff8de950000 - 0x00007ff8de965000 	C:\Program Files\Java\jdk-11.0.10\bin\VCRUNTIME140.dll
+0x00007ff8c3cb0000 - 0x00007ff8c3ceb000 	C:\Program Files\Java\jdk-11.0.10\bin\splashscreen.dll
+0x00007ff8beff0000 - 0x00007ff8bf018000 	C:\Program Files\Java\jdk-11.0.10\bin\java.dll
+0x00007ff8ec420000 - 0x00007ff8ec430000 	C:\Program Files\Java\jdk-11.0.10\bin\verify.dll
+0x00007ff8e4cc0000 - 0x00007ff8e4ea4000 	C:\WINDOWS\SYSTEM32\DBGHELP.DLL
+0x00007ff8e4b10000 - 0x00007ff8e4b44000 	C:\WINDOWS\SYSTEM32\dbgcore.DLL
+0x00007ff8f0e40000 - 0x00007ff8f0ec2000 	C:\WINDOWS\System32\bcryptPrimitives.dll
+0x00007ff8ebd20000 - 0x00007ff8ebd2a000 	C:\Program Files\Java\jdk-11.0.10\bin\jimage.dll
+0x00007ff8de930000 - 0x00007ff8de946000 	C:\Program Files\Java\jdk-11.0.10\bin\zip.dll
+0x00007ff8eee30000 - 0x00007ff8eee42000 	C:\WINDOWS\SYSTEM32\kernel.appcore.dll
+
+dbghelp: loaded successfully - version: 4.0.5 - missing functions: none
+symbol engine: initialized successfully - sym options: 0x614 - pdb path: .;C:\netbeans\bin;C:\WINDOWS\SYSTEM32;C:\Program Files\AVG\Antivirus;C:\netbeans\platform\lib;C:\Program Files\Java\jdk-11.0.10\bin\server;C:\Program Files\Java\jdk-11.0.10\bin
+
+VM Arguments:
+jvm_args: -Dnetbeans.importclass=org.netbeans.upgrade.AutoUpgrade -XX:+UseStringDeduplication -Xss2m -Djdk.gtk.version=2.2 -Dapple.laf.useScreenMenuBar=true -Dapple.awt.graphics.UseQuartz=true -Dsun.java2d.noddraw=true -Dsun.java2d.dpiaware=true -Dsun.zip.disableMemoryMapping=true -Dplugin.manager.check.updates=false -Dnetbeans.extbrowser.manual_chrome_plugin_install=yes --add-opens=java.base/java.net=ALL-UNNAMED --add-opens=java.base/java.lang.ref=ALL-UNNAMED --add-opens=java.base/java.lang=ALL-UNNAMED --add-opens=java.base/java.security=ALL-UNNAMED --add-opens=java.base/java.util=ALL-UNNAMED --add-opens=java.desktop/javax.swing.plaf.basic=ALL-UNNAMED --add-opens=java.desktop/javax.swing.text=ALL-UNNAMED --add-opens=java.desktop/javax.swing=ALL-UNNAMED --add-opens=java.desktop/java.awt=ALL-UNNAMED --add-opens=java.desktop/java.awt.event=ALL-UNNAMED --add-opens=java.prefs/java.util.prefs=ALL-UNNAMED --add-opens=jdk.jshell/jdk.jshell=ALL-UNNAMED --add-modules=jdk.jshell --add-exports=java.desktop/sun.awt=ALL-UNNAMED --add-exports=java.desktop/java.awt.peer=ALL-UNNAMED --add-exports=java.desktop/com.sun.beans.editors=ALL-UNNAMED --add-exports=java.desktop/sun.swing=ALL-UNNAMED --add-exports=java.desktop/sun.awt.im=ALL-UNNAMED --add-exports=jdk.internal.jvmstat/sun.jvmstat.monitor=ALL-UNNAMED --add-exports=java.management/sun.management=ALL-UNNAMED --add-exports=java.base/sun.reflect.annotation=ALL-UNNAMED -XX:+IgnoreUnrecognizedVMOptions -Djdk.home=C:\Program Files\Java\jdk-11.0.10 -Dnetbeans.home=C:\netbeans\platform -Dnetbeans.user=C:\Users\h\AppData\Roaming\NetBeans\12.0 -Dnetbeans.default_userdir_root=C:\Users\h\AppData\Roaming\NetBeans -XX:+HeapDumpOnOutOfMemoryError -XX:HeapDumpPath=C:\Users\h\AppData\Roaming\NetBeans\12.0\var\log\heapdump.hprof -Dsun.awt.keepWorkingSetOnMinimize=true -Dnetbeans.dirs=C:\netbeans\nb;C:\netbeans\ergonomics;C:\netbeans\ide;C:\netbeans\extide;C:\netbeans\java;C:\netbeans\apisupport;C:\netbeans\webcommon;C:\netbeans\websvccommon;C:\netbeans\enterprise;C:\netbeans\mobility;C:\netbeans\profiler;C:\netbeans\python;C:\netbeans\php;C:\netbeans\identity;C:\netbeans\harness;C:\netbeans\cnd;C:\netbeans\cndext;C:\netbeans\dlight;C:\netbeans\groovy;C:\netbeans\extra;C:\netbeans\javacard;C:\netbeans\javafx exit 
+java_command: <unknown>
+java_class_path (initial): C:\netbeans\platform\lib\boot.jar;C:\netbeans\platform\lib\org-openide-modules.jar;C:\netbeans\platform\lib\org-openide-util-lookup.jar;C:\netbeans\platform\lib\org-openide-util-ui.jar;C:\netbeans\platform\lib\org-openide-util.jar
+Launcher Type: generic
+
+[Global flags]
+     intx CICompilerCount                          = 3                                         {product} {ergonomic}
+     uint ConcGCThreads                            = 1                                         {product} {ergonomic}
+     uint G1ConcRefinementThreads                  = 4                                         {product} {ergonomic}
+   size_t G1HeapRegionSize                         = 1048576                                   {product} {ergonomic}
+    uintx GCDrainStackTargetSize                   = 64                                        {product} {ergonomic}
+     bool HeapDumpOnOutOfMemoryError               = true                                   {manageable} {command line}
+    ccstr HeapDumpPath                             = C:\Users\h\AppData\Roaming\NetBeans\12.0\var\log\heapdump.hprof         {manageable} {command line}
+     bool IgnoreUnrecognizedVMOptions              = true                                      {product} {command line}
+   size_t InitialHeapSize                          = 268435456                                 {product} {ergonomic}
+   size_t MarkStackSize                            = 4194304                                   {product} {ergonomic}
+   size_t MaxHeapSize                              = 4263510016                                {product} {ergonomic}
+   size_t MinHeapDeltaBytes                        = 1048576                                   {product} {ergonomic}
+    uintx NonNMethodCodeHeapSize                   = 5830732                                {pd product} {ergonomic}
+    uintx NonProfiledCodeHeapSize                  = 122913754                              {pd product} {ergonomic}
+    uintx ProfiledCodeHeapSize                     = 122913754                              {pd product} {ergonomic}
+    uintx ReservedCodeCacheSize                    = 251658240                              {pd product} {ergonomic}
+     bool SegmentedCodeCache                       = true                                      {product} {ergonomic}
+     intx ThreadStackSize                          = 2048                                   {pd product} {command line}
+     bool UseCompressedClassPointers               = true                                 {lp64_product} {ergonomic}
+     bool UseCompressedOops                        = true                                 {lp64_product} {ergonomic}
+     bool UseG1GC                                  = true                                      {product} {ergonomic}
+     bool UseLargePagesIndividualAllocation        = false                                  {pd product} {ergonomic}
+     bool UseStringDeduplication                   = true                                      {product} {command line}
+
+Logging:
+Log output configuration:
+ #0: stdout all=warning uptime,level,tags
+ #1: stderr all=off uptime,level,tags
+
+Environment Variables:
+JAVA_HOME=C:\Program Files\Java\jdk-11.0.10
+PATH=C:\Python310\Scripts\;C:\Python310\;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Enervista\Tools\SetupCli;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\Common Files\Autodesk Shared\;C:\Program Files\Microsoft SQL Server\120\Tools\Binn\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files (x86)\HP\Common\HPDestPlgIn\;C:\Program Files (x86)\HP\IdrsOCR_15.2.10.1114\;C:\Program Files\Java\jdk-11.0.10\bin;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\150\Tools\Binn\;C:\Program Files\Microsoft SQL Server\150\Tools\Binn\;C:\Program Files\Microsoft SQL Server\150\DTS\Binn\;C:\Program Files (x86)\Microsoft SQL Server\150\DTS\Binn\;C:\Program Files\Azure Data Studio\bin;C:\ProgramData\chocolatey\bin;C:\Program Files (x86)\Microsoft SQL Server\100\Tools\Binn\;C:\Program Files\Microsoft SQL Server\100\Tools\Binn\;C:\Program Files\Microsoft SQL Server\100\DTS\Binn\;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\110\DTS\Binn\;C:\Program Files (x86)\Microsoft SQL Server\120\DTS\Binn\;C:\Program Files (x86)\Microsoft SQL Server\130\DTS\Binn\;C:\Program Files (x86)\Microsoft SQL Server\140\DTS\Binn\;C:\wamp64\bin\php\php5.6.40;C:\ProgramData\ComposerSetup\bin;C:\wamp64\bin\mysql\mysql5.7.36\bin;C:\Program Files\nodejs\;C:\Program Files\dotnet\;C:\Program Files\Git\cmd;C:\Users\h\AppData\Local\Microsoft\WindowsApps;C:\Users\h\AppData\Local\GitHubDesktop\bin;C:\Users\h\AppData\Local\atom\bin;C:\Users\h\AppData\Roaming\Composer\vendor\bin;C:\Users\h\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\h\AppData\Roaming\npm;C:\Program File
+USERNAME=h
+OS=Windows_NT
+PROCESSOR_IDENTIFIER=Intel64 Family 6 Model 61 Stepping 4, GenuineIntel
+
+
+
+---------------  S Y S T E M  ---------------
+
+OS: Windows 10 , 64 bit Build 19041 (10.0.19041.3636)
+
+CPU:total 4 (initial active 4) (2 cores per cpu, 2 threads per core) family 6 model 61 stepping 4 microcode 0x2d, cmov, cx8, fxsr, mmx, sse, sse2, sse3, ssse3, sse4.1, sse4.2, popcnt, avx, avx2, aes, clmul, erms, rtm, 3dnowpref, lzcnt, ht, tsc, tscinvbit, bmi1, bmi2, adx, fma
+
+Memory: 4k page, system-wide physical 16259M (6902M free)
+TotalPageFile size 26700M (AvailPageFile size 191M)
+current process WorkingSet (physical memory assigned to process): 12M, peak: 12M
+current process commit charge ("private bytes"): 52M, peak: 308M
+
+vm_info: Java HotSpot(TM) 64-Bit Server VM (11.0.10+8-LTS-162) for windows-amd64 JRE (11.0.10+8-LTS-162), built on Dec  8 2020 16:32:57 by "mach5one" with MS VC++ 15.9 (VS2017)
+
+END.

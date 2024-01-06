@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<Catalogue>
+    <Book ID="aa">
+        <Author>ss</Author>
+        <Title>dd</Title>
+        <Genre>ff</Genre>
+        <Price>gg</Price>
+        <Publish_Date>hh</Publish_Date>
+        <Description>gg</Description>
+    </Book>
+    <Book ID="ff">
+        <Author>ff</Author>
+        <Title>ff</Title>
+        <Genre>ff</Genre>
+        <Price>f</Price>
+        <Publish_Date>fff</Publish_Date>
+        <Description>fff</Description>
+    </Book>
+</Catalogue>
